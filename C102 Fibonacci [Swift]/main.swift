@@ -8,14 +8,14 @@ let n = 7
 
 
 // Add your code below:
-func fib(x: Int) -> Int{
+func fibo(x: Int) -> Int{
     print("Calculating fibonacci(\(x))...")
     if (x <= 2){
         print("Terminal case, returning 1.")
         return 1
     }
     else{
-        let y = fib(x: x-1) + fib(x: x-2) 
+        let y = fibo(x: x-1) + fibo(x: x-2) 
         print("Non-terminal case, returning \(y).")
         return y
     }
