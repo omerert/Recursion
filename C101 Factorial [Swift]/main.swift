@@ -8,17 +8,20 @@ let n = 7
 
 
 // Add your code below:
-
-func factorial(n: Int) -> Int{
-    print("Calculating factorial(\(n))...")
-    if n <= 1{
+// factorial function
+func factorial(x: Int) -> Int{
+    print("Calculating factorial(\(x))...")
+    // if factorial value is less than or equal to 1
+    if x <= 1{
         print("Terminal case, returning 1.")
         return 1
     }
+    //if factorial value is not less than or equal to 1
     else{
-        let x =  n * factorial(n: n-1) 
-        print(" Non-terminal case, returning \(x).")
-        return x
+        //factorial formula
+        let y =  x * factorial(x: x-1) 
+        print(" Non-terminal case, returning \(y).")
+        return y
     }
 }
-print("The final result is: \(factorial(n: n)). ")
+print("The final result is: \(factorial(x: n)). ")

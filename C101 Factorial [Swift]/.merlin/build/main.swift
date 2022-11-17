@@ -2,23 +2,23 @@
 
 // ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩  ⇩
 // DO NOT ALTER THE TEXT BETWEEN THESE LINES =========={M{E{R{L{I{N{1}N}I}L}R}E}M}=====================================
-let n = -7
+let n = 9
 // DO NOT ALTER THE TEXT BETWEEN THESE LINES =========={M{E{R{L{I{N{1}N}I}L}R}E}M}=====================================
 // ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧  ⇧
 
 
 // Add your code below:
 
-func fac(n: Int) -> Int{
-    print("Calculating factorial(\(n))...")
-    if n <= 1{
+func factorial(x: Int) -> Int{
+    print("Calculating factorial(\(x))...")
+    if x <= 1{
         print("Terminal case, returning 1.")
         return 1
     }
     else{
-        let x =  n * fac(n: n-1) 
-        print(" Non-terminal case, returning \(x).")
-        return x
+        let y =  x * factorial(x: x-1) 
+        print(" Non-terminal case, returning \(y).")
+        return y
     }
 }
-print("The final result is: \(fac(n: n)). ")
+print("The final result is: \(factorial(x: n)). ")
